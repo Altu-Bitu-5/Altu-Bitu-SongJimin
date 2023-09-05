@@ -23,6 +23,7 @@ int main()
                 arr[j] = 1;
             }
     }
+
     while (1)
     {
         int n;
@@ -33,7 +34,7 @@ int main()
             return 0;
         }
 
-        bool is_wrong = false;
+        bool is_wrong = true;
         // 홀수만 생각하니까 3부터 2씩 증가
         for (int a = 3; a <= n; a += 2)
         {
