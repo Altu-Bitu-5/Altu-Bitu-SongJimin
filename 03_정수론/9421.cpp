@@ -7,10 +7,10 @@ void getPrimes(vector<bool> &primes)
 {
 
     // 소수들
-    for (int i = 2; i * i <= 1000030; i++)
+    for (int i = 2; i * i <= 1000001; i++)
     {
         if (primes[i] == true)
-            for (int j = i * i; j <= 1000030; j += i)
+            for (int j = i * i; j <= 1000001; j += i)
             {
                 primes[j] = false;
             }
@@ -50,7 +50,7 @@ int main()
 
     int n;
     cin >> n;
-    vector<bool> primes(1000030, true);
+    vector<bool> primes(1000002, true);
 
     getPrimes(primes);
 
